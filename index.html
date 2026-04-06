@@ -245,8 +245,8 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
 .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .stat-grid-4{grid-template-columns:repeat(4,1fr)}
 .stat-item{text-align:center;padding:24px 16px}
-.stat-value{font-family:'DM Mono',monospace;font-size:36px;font-weight:500;color:var(--color-text-inverse);line-height:1}
-.stat-label{font-size:13px;color:rgba(235,242,245,0.7);margin-top:8px}
+.stat-value{font-family:'DM Mono',monospace;font-size:36px;font-weight:500;color:var(--color-accent);line-height:1}
+.stat-label{font-size:13px;color:var(--color-accent-hover);margin-top:8px}
 
 /* === TRUST === */
 .trust-strip{display:flex;gap:32px;align-items:center;justify-content:center;flex-wrap:wrap;padding:32px 0;border-top:1px solid var(--color-border-subtle);border-bottom:1px solid var(--color-border-subtle)}
@@ -369,14 +369,14 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
 .form-section{background:var(--color-bg-card)}
 .contact-sidebar{display:flex;flex-direction:column;gap:16px}
 .contact-cta-box{flex:1;background:var(--color-accent);border-radius:var(--radius-lg);padding:32px;display:flex;flex-direction:column;justify-content:center}
-.contact-cta-label{font-size:13px;font-weight:600;color:rgba(255,255,255,0.7);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px}
-.contact-cta-title{font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--color-bg-card);margin-bottom:12px}
-.contact-cta-desc{font-size:14px;color:rgba(255,255,255,0.85);line-height:1.55;margin-bottom:20px}
+.contact-cta-label{font-size:13px;font-weight:600;color:rgba(10,24,32,0.65);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px}
+.contact-cta-title{font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--color-text-on-accent);margin-bottom:12px}
+.contact-cta-desc{font-size:14px;color:rgba(10,24,32,0.75);line-height:1.55;margin-bottom:20px}
 .contact-resource-box{flex:0.6;background:var(--color-bg-secondary);border:1px solid var(--color-border-default);border-radius:var(--radius-lg);padding:28px;display:flex;flex-direction:column;justify-content:center}
 .contact-resource-label{font-size:13px;font-weight:600;color:var(--color-text-tertiary);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px}
 .contact-resource-title{font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:var(--color-text-primary);margin-bottom:8px}
 .contact-resource-desc{font-size:14px;color:var(--color-text-secondary);line-height:1.5;margin-bottom:16px}
-.btn-disabled-ghost{background:rgba(255,255,255,0.2);color:var(--color-bg-card);border:1.5px solid rgba(255,255,255,0.4);align-self:flex-start;cursor:default;opacity:0.7}
+.btn-disabled-ghost{background:var(--color-primary);color:var(--color-text-on-primary);border:1.5px solid var(--color-primary);align-self:flex-start;cursor:default}
 .btn-disabled-outline{align-self:flex-start;cursor:default;opacity:0.6}
 
 /* === IMAGE BREAK === */
@@ -640,9 +640,9 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
   <section class="section-dark section-lg">
     <div class="container">
       <div class="section-intro-wide">
-        <div class="eyebrow" class="text-muted-light">For leverand&oslash;rer</div>
-        <div style="background:rgba(247,245,240,0.1);border-radius:var(--radius-lg);padding:24px 32px;display:inline-block;margin-bottom:16px">
-          <h2 class="h2" style="color:var(--color-text-inverse);margin:0">Faste kunder. Forutsigbar inntekt. Null lead-jakt.</h2>
+        <div class="eyebrow" style="color:var(--color-accent)">For leverand&oslash;rer</div>
+        <div style="margin-bottom:16px">
+          <h2 class="h2" style="color:var(--color-accent-hover);margin:0">Faste kunder. Forutsigbar inntekt. Null lead-jakt.</h2>
         </div>
       </div>
       <div class="stat-grid" style="max-width:800px;margin:0 auto">
@@ -674,7 +674,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
           </ul>
           <div class="plan-cta"><button class="btn btn-secondary w-full" onclick="showPage('eiere');setTimeout(function(){document.getElementById('eier-kontakt').scrollIntoView({behavior:'smooth'})},100)">Kom i gang</button></div>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card pricing-card-pro">
           <div class="plan-name">PLUS</div>
           <div><span class="plan-price">399</span><span class="plan-period">kr/mnd</span></div>
           <p class="plan-desc">For eieren som vil ha kontroll. Fast leverand&oslash;r, vedlikeholdsplan og full servicelogg.</p>
@@ -687,7 +687,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <li class="plan-feature"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sesongpakker</li>
             <li class="plan-feature"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Helsescore</li>
           </ul>
-          <div class="plan-cta"><button class="btn btn-primary w-full" onclick="showPage('eiere');setTimeout(function(){document.getElementById('eier-kontakt').scrollIntoView({behavior:'smooth'})},100)">Velg Plus</button></div>
+          <div class="plan-cta"><button class="btn btn-accent w-full" onclick="showPage('eiere');setTimeout(function(){document.getElementById('eier-kontakt').scrollIntoView({behavior:'smooth'})},100)">Velg Plus</button></div>
         </div>
         <div class="pricing-card pricing-card-pro">
           <div class="pricing-badge">For kystportef&oslash;ljen</div>
@@ -703,7 +703,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <li class="plan-feature"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(235,242,245,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Dedikert kundeansvarlig</li>
             <li class="plan-feature"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(235,242,245,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Ubegrenset eiendommer</li>
           </ul>
-          <div class="plan-cta"><button class="btn btn-accent w-full" style="cursor:default;opacity:0.7" disabled>Kommer snart</button></div>
+          <div class="plan-cta"><button class="btn btn-accent w-full" style="cursor:default" disabled>Kommer snart</button></div>
         </div>
       </div>
     </div>
@@ -754,7 +754,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <div class="contact-cta-label">Foretrekker du en samtale?</div>
             <h3 class="contact-cta-title">Book en samtale</h3>
             <p class="contact-cta-desc">30 minutter, uforpliktende. Vi snakker om eiendommene dine og hvordan Servicely kan hjelpe.</p>
-            <button class="btn" class="btn-disabled-ghost" disabled>Booking kommer snart</button>
+            <button class="btn btn-disabled-ghost" disabled>Booking kommer snart</button>
           </div>
           <div class="contact-resource-box">
             <div class="contact-resource-label">Ressurser</div>
@@ -929,7 +929,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <div class="contact-cta-label">Foretrekker du en samtale?</div>
             <h3 class="contact-cta-title">Book en samtale</h3>
             <p class="contact-cta-desc">30 minutter, uforpliktende. Vi snakker om eiendommene dine og hvordan Servicely kan hjelpe.</p>
-            <button class="btn" class="btn-disabled-ghost" disabled>Booking kommer snart</button>
+            <button class="btn btn-disabled-ghost" disabled>Booking kommer snart</button>
           </div>
           <div class="contact-resource-box">
             <div class="contact-resource-label">Ressurser</div>
@@ -1072,7 +1072,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <div class="contact-cta-label">Foretrekker du en samtale?</div>
             <h3 class="contact-cta-title">Book en samtale</h3>
             <p class="contact-cta-desc">30 minutter, uforpliktende. Vi snakker om eiendommene dine og hvordan Servicely kan hjelpe.</p>
-            <button class="btn" class="btn-disabled-ghost" disabled>Booking kommer snart</button>
+            <button class="btn btn-disabled-ghost" disabled>Booking kommer snart</button>
           </div>
           <div class="contact-resource-box">
             <div class="contact-resource-label">Ressurser</div>
@@ -1256,7 +1256,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <div class="contact-cta-label">Foretrekker du en samtale?</div>
             <h3 class="contact-cta-title">Book en samtale</h3>
             <p class="contact-cta-desc">30 minutter, uforpliktende. Vi snakker om eiendommene dine og hvordan Servicely kan hjelpe.</p>
-            <button class="btn" class="btn-disabled-ghost" disabled>Booking kommer snart</button>
+            <button class="btn btn-disabled-ghost" disabled>Booking kommer snart</button>
           </div>
           <div class="contact-resource-box">
             <div class="contact-resource-label">Ressurser</div>
@@ -1402,7 +1402,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <div class="contact-cta-label">Foretrekker du en samtale?</div>
             <h3 class="contact-cta-title">Book en samtale</h3>
             <p class="contact-cta-desc">30 minutter, uforpliktende. Vi snakker om eiendommene dine og hvordan Servicely kan hjelpe.</p>
-            <button class="btn" class="btn-disabled-ghost" disabled>Booking kommer snart</button>
+            <button class="btn btn-disabled-ghost" disabled>Booking kommer snart</button>
           </div>
           <div class="contact-resource-box">
             <div class="contact-resource-label">Ressurser</div>
@@ -1552,7 +1552,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
             <div class="contact-cta-label">Foretrekker du en samtale?</div>
             <h3 class="contact-cta-title">Book en samtale</h3>
             <p class="contact-cta-desc">30 minutter, uforpliktende. Vi snakker om eiendommene dine og hvordan Servicely kan hjelpe.</p>
-            <button class="btn" class="btn-disabled-ghost" disabled>Booking kommer snart</button>
+            <button class="btn btn-disabled-ghost" disabled>Booking kommer snart</button>
           </div>
           <div class="contact-resource-box">
             <div class="contact-resource-label">Ressurser</div>
