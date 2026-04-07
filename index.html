@@ -195,7 +195,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
 .compare-card{border-radius:var(--radius-lg);padding:28px;background:var(--color-bg-card)}
 .compare-bad{border:1px solid rgba(138,56,48,0.2)}
 .compare-good{border:1px solid rgba(30,58,74,0.2)}
-.compare-label{font-size:15px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:16px}
+.compare-label{font-size:20px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:16px}
 .compare-bad .compare-label{color:var(--color-error)}
 .compare-good .compare-label{color:var(--color-primary)}
 .compare-list{list-style:none;display:flex;flex-direction:column;gap:10px}
@@ -1317,18 +1317,18 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
           <div class="compare-label">Uten Servicely</div>
           <ul class="compare-list">
             <li><span>&rarr;</span> Betaler for leads du kanskje ikke vinner</li>
-            <li><span>&rarr;</span> Ny kunde = ny tillitsbygging fra null</li>
-            <li><span>&rarr;</span> Lav sesong = tom ordrebok</li>
-            <li><span>&rarr;</span> Prisjakt p&aring; anbudsrunder</li>
+            <li><span>&rarr;</span> Manuell planlegging og regneark</li>
+            <li><span>&rarr;</span> Dokumentasjon i hodet, ikke i system</li>
+            <li><span>&rarr;</span> Fakturerer etter arbeidstid, purrer manuelt</li>
           </ul>
         </div>
         <div class="compare-card compare-good">
-          <div class="compare-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Med Servicely</div>
+          <div class="compare-label">Med Servicely</div>
           <ul class="compare-list">
             <li><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Faste kunder som allerede har valgt deg</li>
-            <li><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Relasjonsbygging over tid</li>
+            <li><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Dokumentert og oppdatert i sanntid</li>
             <li><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sesongpakker fyller lavsesong</li>
-            <li><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Forutsigbar inntekt &mdash; null lead-kostnad</li>
+            <li><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Faktura og betaling automatisk i appen</li>
           </ul>
         </div>
       </div>
@@ -1351,6 +1351,131 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
     </div>
   </section>
 
+  <!-- Seksjon A: Slik fungerer det -->
+  <section class="section">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow eyebrow-accent">Slik fungerer det</div>
+        <h2 class="h2">Fra foresp&oslash;rsel til betaling &mdash; i &eacute;n app</h2>
+      </div>
+      <div class="flex-col-16" style="max-width:720px;margin:0 auto">
+        <div class="feature-row"><div class="accent-number">01</div><div><div class="h4">Oppdrag i innboksen</div><p class="body-sm">Dato, adresse og historikk. Ingen telefonrunder.</p></div></div>
+        <div class="feature-row"><div class="accent-number">02</div><div><div class="h4">Servicelogg fra dag &eacute;n</div><p class="body-sm">Se hva som er gjort &mdash; ogs&aring; av andre leverand&oslash;rer. Ingen starter p&aring; null.</p></div></div>
+        <div class="feature-row"><div class="accent-number">03</div><div><div class="h4">Dokumenter p&aring; stedet</div><p class="body-sm">Bilder, funn og sjekklister lagres i sanntid. Systemet er oppdatert f&oslash;r du forlater eiendommen.</p></div></div>
+        <div class="feature-row"><div class="accent-number">04</div><div><div class="h4">Rapport til kunden automatisk</div><p class="body-sm">Utf&oslash;rt arbeid, bilder, funn og materiell. Ingen oppf&oslash;lgingssamtale.</p></div></div>
+        <div class="feature-row"><div class="accent-number">05</div><div><div class="h4">Faktura og betaling i appen</div><p class="body-sm">Genereres ved fullf&oslash;ring. Kunden godkjenner. Utbetaling 1. og 16.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seksjon B: Sesongpakker -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow eyebrow-accent">Sesongpakker</div>
+        <h2 class="h2">Forh&aring;ndssolgt ettersp&oslash;rsel du kan planlegge mot</h2>
+        <p class="body" style="max-width:640px;margin:16px auto 0">Sesongpakkene er forh&aring;ndsdefinerte tjenestepakker kunden bestiller i appen. Du vet i februar hva som skal gj&oslash;res i mai.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px">
+        <div class="card" style="border-top:3px solid var(--color-primary)">
+          <div class="mono" style="font-size:11px;color:var(--color-accent);margin-bottom:8px">V&Aring;R &middot; APR&ndash;MAI</div>
+          <div class="h4" style="margin-bottom:4px">Hytte&aring;pning</div>
+          <div class="mono" style="color:var(--color-accent);font-weight:600;margin-bottom:12px">3 500&ndash;6 000 kr</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--color-text-secondary)">
+            <li>&middot; Innvendig v&aring;rrengj&oslash;ring</li>
+            <li>&middot; Gjennomgang vann og avl&oslash;p</li>
+            <li>&middot; Utend&oslash;rs klargj&oslash;ring</li>
+            <li>&middot; Sjekk elektriske anlegg</li>
+          </ul>
+        </div>
+        <div class="card" style="border-top:3px solid var(--color-primary)">
+          <div class="mono" style="font-size:11px;color:var(--color-accent);margin-bottom:8px">H&Oslash;ST &middot; SEPT&ndash;OKT</div>
+          <div class="h4" style="margin-bottom:4px">Hyttestenging</div>
+          <div class="mono" style="color:var(--color-accent);font-weight:600;margin-bottom:12px">2 800&ndash;5 000 kr</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--color-text-secondary)">
+            <li>&middot; T&oslash;mming av vannr&oslash;r</li>
+            <li>&middot; Innvendig nedvask og sikring</li>
+            <li>&middot; Vinterpakking utem&oslash;bler</li>
+            <li>&middot; Siste sjekk pipe/varmekilde</li>
+          </ul>
+        </div>
+        <div class="card" style="border-top:3px solid var(--color-primary)">
+          <div class="mono" style="font-size:11px;color:var(--color-accent);margin-bottom:8px">H&Oslash;ST &middot; OKT&ndash;NOV</div>
+          <div class="h4" style="margin-bottom:4px">B&aring;t og brygge</div>
+          <div class="mono" style="color:var(--color-accent);font-weight:600;margin-bottom:12px">4 000&ndash;8 000 kr</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--color-text-secondary)">
+            <li>&middot; Henting til vinteropplag</li>
+            <li>&middot; Vask, t&oslash;rk og dekkpresenning</li>
+            <li>&middot; Sjekk og sikring av brygge</li>
+            <li>&middot; Vinterklargj&oslash;ring naust</li>
+          </ul>
+        </div>
+        <div class="card" style="border-top:3px solid var(--color-accent)">
+          <div class="mono" style="font-size:11px;color:var(--color-accent);margin-bottom:8px">L&Oslash;PENDE</div>
+          <div class="h4" style="margin-bottom:4px">Vaktmesterrunde</div>
+          <div class="mono" style="color:var(--color-accent);font-weight:600;margin-bottom:12px">1 800&ndash;3 500 kr</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--color-text-secondary)">
+            <li>&middot; Hagesjekk og gressklipping</li>
+            <li>&middot; Bassengrengj&oslash;ring</li>
+            <li>&middot; Rapport med funn</li>
+            <li>&middot; Overflatevedlikehold</li>
+          </ul>
+        </div>
+        <div class="card" style="border-top:3px solid var(--color-accent)">
+          <div class="mono" style="font-size:11px;color:var(--color-accent);margin-bottom:8px">VED BEHOV</div>
+          <div class="h4" style="margin-bottom:4px">Transport og interi&oslash;r</div>
+          <div class="mono" style="color:var(--color-accent);font-weight:600;margin-bottom:12px">3 000&ndash;7 000 kr</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--color-text-secondary)">
+            <li>&middot; Henting fra gjestehus</li>
+            <li>&middot; Pakking og sikring</li>
+            <li>&middot; Levering til annen adresse</li>
+            <li>&middot; Spesialtransport av verdier</li>
+          </ul>
+        </div>
+        <div class="card" style="border-top:3px solid var(--color-accent)">
+          <div class="mono" style="font-size:11px;color:var(--color-accent);margin-bottom:8px">L&Oslash;PENDE</div>
+          <div class="h4" style="margin-bottom:4px">Fast renhold</div>
+          <div class="mono" style="color:var(--color-accent);font-weight:600;margin-bottom:12px">L&oslash;pende avtale</div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--color-text-secondary)">
+            <li>&middot; Regelmessig innvendig renhold</li>
+            <li>&middot; Vinduspuss</li>
+            <li>&middot; Overflatevedlikehold og maling</li>
+            <li>&middot; Tilstandsrapport</li>
+          </ul>
+        </div>
+      </div>
+      <p class="stat-footnote" style="margin-top:24px">* Prisintervaller er illustrative estimater &mdash; ikke bindende tall.</p>
+    </div>
+  </section>
+
+  <!-- Seksjon C: Effektiv operasjon -->
+  <section class="section-dark section-lg">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow" style="color:var(--color-accent)">Effektiv operasjon</div>
+        <h2 class="h2" style="color:var(--color-text-inverse)">Mindre administrasjon. Mer fakturerbar tid.</h2>
+      </div>
+      <div class="two-grid" style="gap:32px;margin-top:40px">
+        <div style="background:var(--color-bg-card);border:1.5px solid var(--color-accent);border-radius:var(--radius-lg);padding:32px">
+          <div class="h4" style="color:var(--color-primary);margin-bottom:24px;font-size:19px">01 Planlegging og kapasitet</div>
+          <div class="flex-col-16">
+            <div><div class="h4" style="color:var(--color-accent);font-size:18px">Forh&aring;ndssolgt volum</div><p class="body-sm" style="color:var(--color-text-secondary)">Vet hva som kommer. Planlegg bemanning mot kjent ettersp&oslash;rsel &mdash; ikke mot h&aring;p.</p></div>
+            <div><div class="h4" style="color:var(--color-accent);font-size:18px">Kalender og kapasitetsstyring</div><p class="body-sm" style="color:var(--color-text-secondary)">Maks oppdrag per dag. Blokker datoer og ferie. Servicely sender aldri mer enn du h&aring;ndterer.</p></div>
+            <div><div class="h4" style="color:var(--color-accent);font-size:18px">Kortere kj&oslash;ring, mer fakturerbar tid</div><p class="body-sm" style="color:var(--color-text-secondary)">Faste kunder i samme omr&aring;de gir effektive ruter. Mindre bil, mer arbeid.</p></div>
+          </div>
+        </div>
+        <div style="background:var(--color-bg-card);border:1.5px solid var(--color-accent);border-radius:var(--radius-lg);padding:32px">
+          <div class="h4" style="color:var(--color-primary);margin-bottom:24px;font-size:19px">02 Gjennomf&oslash;ring og rapportering</div>
+          <div class="flex-col-16">
+            <div><div class="h4" style="color:var(--color-accent);font-size:18px">Dokumenter p&aring; stedet i sanntid</div><p class="body-sm" style="color:var(--color-text-secondary)">Bilder, funn og sjekklister lagres i appen. Systemet er oppdatert f&oslash;r du forlater eiendommen.</p></div>
+            <div><div class="h4" style="color:var(--color-accent);font-size:18px">Rapport til kunden automatisk</div><p class="body-sm" style="color:var(--color-text-secondary)">Kunden mottar rapport ved fullf&oslash;ring: utf&oslash;rt arbeid, bilder, funn. Ingen oppf&oslash;lgingssamtale.</p></div>
+            <div><div class="h4" style="color:var(--color-accent);font-size:18px">Faktura og betaling i appen</div><p class="body-sm" style="color:var(--color-text-secondary)">Faktura genereres ved fullf&oslash;ring. Kunden godkjenner. Utbetaling 1. og 16. Ingen purring.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <div class="zigzag">
@@ -1366,12 +1491,12 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
     </div>
   </section>
 
-  <section class="section-sm">
+  <section class="section-sm section-dark">
     <div class="container">
-      <div class="pilot-box">
-        <div class="eyebrow eyebrow-accent" class="mb-16">Pilot 2026</div>
-        <h2 class="h2" class="mb-16">Vi starter med h&aring;ndverkere langs Vestfoldkysten.<br>Servicely. <span class="seriously">Seriously.</span></h2>
-        <p class="body" class="section-intro-narrow">Servicely lanserer med et begrenset antall leverand&oslash;rer i pilotomr&aring;det. F&aring; f&oslash;rstevalg p&aring; faste kunder &mdash; registrer interesse n&aring;.</p>
+      <div class="pilot-box" style="border-color:var(--color-accent)">
+        <div class="eyebrow eyebrow-accent" style="color:var(--color-accent)">Pilot 2026</div>
+        <h2 class="h2" style="color:var(--color-primary)">Vi starter med h&aring;ndverkere langs Vestfoldkysten.<br>Servicely. <span class="seriously">Seriously.</span></h2>
+        <p class="body" style="color:var(--color-text-secondary)">Servicely lanserer med et begrenset antall leverand&oslash;rer i pilotomr&aring;det. F&aring; f&oslash;rstevalg p&aring; faste kunder &mdash; registrer interesse n&aring;.</p>
         <div class="geo-strip">
           <span class="geo-pill geo-pill-active">Tj&oslash;me</span>
           <span class="geo-pill geo-pill-active">T&oslash;nsberg</span>
@@ -1385,7 +1510,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
     </div>
   </section>
 
-  <section class="section"><div class="container"><div class="section-intro"><div class="eyebrow eyebrow-accent">Sp&oslash;rsm&aring;l og svar</div><h2 class="h2">Ofte stilte sp&oslash;rsm&aring;l</h2></div><div class="faq-list"><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Hva koster det &aring; bli med?</div><div class="faq-icon">+</div></div><div class="faq-answer">0 kr. Du betaler kun 18% provisjon p&aring; fullf&oslash;rte oppdrag. Ingen oppstartsgebyr, ingen m&aring;nedlig avgift.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Jeg har nok kunder.</div><div class="faq-icon">+</div></div><div class="faq-answer">Faste kunder du slipper &aring; jage er mer verdt enn tilfeldige leads. Servicely gir deg en kundeportef&oslash;lje som vokser over tid &mdash; uten markedsf&oslash;ringskostnader.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Jeg vil se at det fungerer f&oslash;rst.</div><div class="faq-icon">+</div></div><div class="faq-answer">Vi starter med ett oppdrag. Funker det ikke &mdash; ingen kostnad. Du beholder kontrollen.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Kan jeg beholde mine eksisterende kunder utenfor Servicely?</div><div class="faq-icon">+</div></div><div class="faq-answer">Ja, absolutt. Servicely har ingenting med dine eksisterende kunderelasjoner &aring; gj&oslash;re. Du bruker plattformen parallelt.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Hvilke sertifikater kreves?</div><div class="faq-icon">+</div></div><div class="faq-answer">Fagbrev relevant for dine tjenestekategorier, gyldig HMS-kort og aktiv ansvarsforsikring. Alt lastes opp digitalt ved registrering.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Hva skjer i lavsesong?</div><div class="faq-icon">+</div></div><div class="faq-answer">Servicelys AI-r&aring;dgiver identifiserer vedlikeholdsbehov i lavsesong og anbefaler aktuelle tiltak til kundene. Sesongpakker selges lenge f&oslash;r sesongstart.</div></div></div></div></section>
+  <section class="section section-alt"><div class="container"><div class="section-intro"><div class="eyebrow eyebrow-accent">Sp&oslash;rsm&aring;l og svar</div><h2 class="h2">Ofte stilte sp&oslash;rsm&aring;l</h2></div><div class="faq-list"><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Hva koster det &aring; bli med?</div><div class="faq-icon">+</div></div><div class="faq-answer">0 kr. Du betaler kun 18% provisjon p&aring; fullf&oslash;rte oppdrag. Ingen oppstartsgebyr, ingen m&aring;nedlig avgift.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Jeg har nok kunder.</div><div class="faq-icon">+</div></div><div class="faq-answer">Faste kunder du slipper &aring; jage er mer verdt enn tilfeldige leads. Servicely gir deg en kundeportef&oslash;lje som vokser over tid &mdash; uten markedsf&oslash;ringskostnader.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Jeg vil se at det fungerer f&oslash;rst.</div><div class="faq-icon">+</div></div><div class="faq-answer">Vi starter med ett oppdrag. Funker det ikke &mdash; ingen kostnad. Du beholder kontrollen.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Kan jeg beholde mine eksisterende kunder utenfor Servicely?</div><div class="faq-icon">+</div></div><div class="faq-answer">Ja, absolutt. Servicely har ingenting med dine eksisterende kunderelasjoner &aring; gj&oslash;re. Du bruker plattformen parallelt.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Hvilke sertifikater kreves?</div><div class="faq-icon">+</div></div><div class="faq-answer">Fagbrev relevant for dine tjenestekategorier, gyldig HMS-kort og aktiv ansvarsforsikring. Alt lastes opp digitalt ved registrering.</div></div><div class="faq-item"><div class="faq-question" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)"><div class="faq-q-text">Hva skjer i lavsesong?</div><div class="faq-icon">+</div></div><div class="faq-answer">Servicelys AI-r&aring;dgiver identifiserer vedlikeholdsbehov i lavsesong og anbefaler aktuelle tiltak til kundene. Sesongpakker selges lenge f&oslash;r sesongstart.</div></div></div></div></section>
 
   
   <section class="section" id="lev-kontakt">
@@ -1407,7 +1532,7 @@ button{cursor:pointer;font-family:'DM Sans',sans-serif}
           <div class="contact-cta-box">
             <div class="contact-cta-label">Foretrekker du en samtale?</div>
             <h3 class="contact-cta-title">Book en samtale</h3>
-            <p class="contact-cta-desc">30 minutter, uforpliktende. Vi snakker om eiendommene dine og hvordan Servicely kan hjelpe.</p>
+            <p class="contact-cta-desc">30 minutter. Vi viser hvordan Servicely kan fylle ordreboken din.</p>
             <button class="btn btn-disabled-ghost" disabled>Booking kommer snart</button>
           </div>
           <div class="contact-resource-box">
